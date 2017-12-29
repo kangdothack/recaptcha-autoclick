@@ -4,7 +4,7 @@ let isRecaptchaFrame = () => {
 
 let captchaInterval = setInterval(() => {
   if (isRecaptchaFrame()) {
-    document.getElementsByClassName('recaptcha-checkbox-checkmark')[0].click();
     clearInterval(captchaInterval);
+    document.getElementsByClassName('recaptcha-checkbox-checkmark')[0].click();
   }  
 }, 500);
